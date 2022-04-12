@@ -1,0 +1,1 @@
+	gds flatglob "*_example_*";	gds flatten true;	gds read ./m_Top_Module_User.gds;	load m_Top_Module_User -dereference;	select top cell;	extract no all;	extract do local;	extract;	ext2spice lvs;	ext2spice m_Top_Module_User.ext;	feedback save extract_m_Top_Module_User.log;	exit;
